@@ -1,37 +1,49 @@
-
+/* setting spacing to override default */
 p {
     padding: 0;
-    margin:0;
-    box-sizing: border-box;
+    margin:0; 
 }
 
+/* imported this font */
 h1 {
+    font-family: "Montserrat";
     text-align: center;
     font-size: 35px;
 }
 
+/* imported this font */
 h2 {
+    font-family: "Montserrat"; 
+    font-size: 28px;
+}
+
+/* imported this font */
+h3 {
     font-family: "Montserrat"; 
     font-size: 22px;
 }
 
+/* this is incase i take the animation off, i have the background color set */
 body {
     background-color: #D4B8B1;
     margin: 0;
     padding: 0;
 }
 
+/* applying flexbox properties to my container */
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
 }
 
+/* setting margins to 0 to override default space */
 body, .background-container {
     margin: 0;
     padding: 0;
 }
 
+/* trying out some subtle background animation */
 .background-container {
     position: fixed;
     top: 0;
@@ -41,9 +53,10 @@ body, .background-container {
     z-index: -1;
     background: linear-gradient(45deg, #D4B8B1, #CD8C8C, #866c69, #4a1812);
     background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 7s ease infinite;
 }
 
+/* trying out some subtle background animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -56,6 +69,8 @@ body, .background-container {
     }
 }
 
+/* i want to get this items to spread across the nav bar but can't figure out how */
+/* setting the color scheme, spacing, and border in the header */
 header {
     background-color: #4a1812;
     border-bottom: 6px solid #866c69;
@@ -63,9 +78,10 @@ header {
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
+/* setting how the items in my list appear, using flexbox properties */
 ul {
     padding: 0;
     margin: 0;
@@ -75,12 +91,14 @@ ul {
     justify-content: space-around;
 }
 
-li {
+/* I am not sure that i need this, commenting out for now */
+/* li {
     display: inline-block;
     margin: 0 10px;
     position: relative;
-}
+} */
 
+/* setting the color scheme, spacing, and border in the footer */
 footer {
     background-color: #4a1812;
     border-top: 6px solid #866c69;
@@ -92,6 +110,7 @@ footer {
     box-sizing: border-box;
 }
 
+/* setting spacing, borders, and the alignment of the text */
 article {
     margin: 20px auto;
     border: 2 px solid #4a1812;
@@ -102,10 +121,7 @@ article {
     text-align: left;
 }
 
-.text-content {
-    margin-left: 20px;
-}
-
+/* setting the color and spacing on the nav bar */
 nav {
     background-color: #4a1812;
     padding: 20px;
@@ -113,6 +129,7 @@ nav {
     justify-content: space-around; 
 }
 
+/* styling how the dropdown options on profile looks */
 .dropdown-options {
     display: none;
     position: absolute;
@@ -123,33 +140,39 @@ nav {
     padding: 10px;
 }
 
+/* setting the shape of the drop down options from profile */
 .dropdown:hover .dropdown-options {
     display: block;
 }
 
+/* setting the color the button shows on hover */
 button:hover {
     background-color: #966c69;
 }
 
+/* setting the color and spacing of the button */
+/* I would like to put some space between the button & message box but can't get it to move */
 button {
     border: 2px solid #4a1812;
     background-color:  #4a1812;
     color: #D4B8B1;
+    padding-top: 4px;
 }
 
+/* setting how my links on the page look */
 a {
     color: #D4B8B1;
     padding: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
     font-size: 18px;
     font-weight: bold;
 }
 
+/* setting the hover color on and clickable links on the page */
 a:hover {
     background-color: #966c69;
 }
 
+/* adjusting flexbox properties */
 main {
     flex: 1; /* Grow to fill whatever the remaining space is */
     display: flex;
@@ -158,6 +181,7 @@ main {
     flex-wrap: wrap; 
 }
 
+/* making sure the form is spaced well and border matching picture */
 form {
     border: 3px solid #4a1812;
     width: 30%;
@@ -166,35 +190,43 @@ form {
     padding: 30px;
 }
 
+/* creating a little space between the forms */
 .form-label {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
+/* making the labels stand out a little more with the bold effect */
 label {
     font-size: 16px;
     font-weight: bold;
 }
 
+/* targeting the text in my form to be a certain color */
 ::placeholder {
     color:  #D4B8B1;
 }
 
+/* spacing in text area */
 input, textarea {
     padding: 5px;
     border-radius: 5px;
 }
 
+/* putting a border around my picture and setting the size */
 #profile-picture {
     border-radius: 50px;
-    border-style: solid;
-    border-color: #4a1812;
+    border: 3px solid #4a1812;
+    width: 230px;
+    height: 300px;
 }
 
+/* making the text the same color as nav bar so page flows better */
 div {
     color: #4a1812 
 }
 
+/* spacing out my contact links to fill the container nicely */
 .contact_links {
     display: flex;
     justify-content: space-around;

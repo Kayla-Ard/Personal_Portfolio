@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="./static/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    </head>   
+    <body>
+        <div class="container">
+        <div class="background-container"></div>
+        
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li class="dropdown">
+                        <a href="#">Portfolio</a>
+                        <ul class="dropdown-options">
+                            <li><a href="project_1.html">Project 1</a></li>
+                            <li><a href="project_2.html">Project 2</a></li>
+                            <li><a href="project_3.html">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Welcome to my portfolio!</h1>
+        <main>
+            <article>
+                <img src="./static/images/Portfolio Pic 2.jpeg" id="profile-picture" alt="My picture" width="230" height="300">
+                <div class="text-container">
+                    <h2>Kayla Ard</h2>
+                    <h2>Full Stack Software Engineer</h2>
+                    <p>I am currently based in Utah.</p>
+                    <p>Enjoy exploring my portfolio and don't hesitate to contact me with any questions.</p>
+                </div>
+            </article>
+            <article>
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="form-label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div>
+                        <input 
+                            id="name" 
+                            type="text"
+                            placeholder="Enter you name here">
+                    </div>
+                    <div class="form-label">
+                        <label for="email">Email</label>
+                    </div>
+                    <div>
+                        <input 
+                            id="email" 
+                            type="text"
+                            placeholder="Enter you email here">
+                    </div>
+                    <div class="form-label">
+                        <label for="message-field">Message</label>
+                    </div>
+                    <div>
+                        <textarea
+                            id="message"
+                            type="text" 
+                            placeholder="Enter you message here"></textarea>
+                    </div>
+                    <button>Submit</button>
+                </form>
+                <div class="contact_links">
+                    <a href="https://www.linkedin.com/in/kayla-ard/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Kayla-Ard" target="_blank">GitHub</a>
+                    <a href="kaylaard@yahoo.com" target="_blank">Email</a>
+                    <a href="https://www.instagram.com/kayla__ard?igsh=MTQyOW16bXpjbGRjcQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/kayla.ard.12?mibextid=LQQJ4d" target="_blank">Facebook</a>
+                    <a href="https://x.com/Kayla_Ard" target="_blank">X</a>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>&copy;2024 Kayla Ard Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+    </body> 
+</html>

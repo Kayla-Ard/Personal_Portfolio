@@ -8,19 +8,46 @@ p {
 h1 {
     font-family: "Montserrat";
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 /* imported this font */
 h2 {
     font-family: "Montserrat"; 
-    font-size: 28px;
+    font-size: 35px;
 }
 
 /* imported this font */
 h3 {
     font-family: "Montserrat"; 
     font-size: 22px;
+}
+
+h4 {
+    font-family: "Montserrat"; 
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    border: 2px solid;
+    background-color: #4a1812;
+    color: #866c69;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+h5 {
+    font-family: "Montserrat"; 
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 /* this is incase i take the animation off, i have the background color set */
@@ -69,6 +96,10 @@ body, .background-container {
     }
 }
 
+.title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 /* i want to get this items to spread across the nav bar but can't figure out how */
 /* setting the color scheme, spacing, and border in the header */
 header {
@@ -86,17 +117,9 @@ ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    
 }
-
-/* I am not sure that i need this, commenting out for now */
-/* li {
-    display: inline-block;
-    margin: 0 10px;
-    position: relative;
-} */
 
 /* setting the color scheme, spacing, and border in the footer */
 footer {
@@ -125,8 +148,18 @@ article {
 nav {
     background-color: #4a1812;
     padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0 10px;
 }
 
 /* styling how the dropdown options on profile looks */
@@ -145,6 +178,11 @@ nav {
     display: block;
 }
 
+.profile-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+}
+
 /* setting the color the button shows on hover */
 button:hover {
     background-color: #966c69;
@@ -156,7 +194,9 @@ button {
     border: 2px solid #4a1812;
     background-color:  #4a1812;
     color: #D4B8B1;
-    padding-top: 4px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* setting how my links on the page look */
@@ -184,16 +224,22 @@ main {
 /* making sure the form is spaced well and border matching picture */
 form {
     border: 3px solid #4a1812;
-    width: 30%;
+    width: 50%;
     margin: 0 auto 20px;
     border-radius: 50px;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 /* creating a little space between the forms */
 .form-label {
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.email {
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* making the labels stand out a little more with the bold effect */
@@ -209,16 +255,21 @@ label {
 
 /* spacing in text area */
 input, textarea {
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid #4a1812;
 }
 
 /* putting a border around my picture and setting the size */
 #profile-picture {
     border-radius: 50px;
     border: 3px solid #4a1812;
-    width: 230px;
-    height: 300px;
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
 }
 
 /* making the text the same color as nav bar so page flows better */
@@ -231,4 +282,102 @@ div {
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images as needed */
+}
+
+.certifications li {
+    /* border: 2px solid #4a1812; */
+    flex: 0 0 calc(50% - 20px); /* Adjust the width of each item */
+    max-width: calc(50% - 20px); /* Adjust the max-width of each item */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.certifications img {
+    width: 100%; /* Ensure images fill their parent container */
+    height: 100%; /* Maintain aspect ratio */
+    border: 10px solid #4a1812;
+}
+
+.certifications ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Adjust the gap between images as needed */
+}
+
+.text-container {
+    font-size: 18px;
+    text-align: left;
+}
+
+.ed-container {
+    font-size: 18px;
+    text-align: left;
+}
+
+.ed-container li {
+    text-align: left;
+}
+
+.goals-container {
+    font-size: 18px;
+    text-align: left;
+}
+
+.goals-container ul li {
+    display: block;
+    margin-right: 15px;
+}
+.experience-container {
+    font-size: 20px;
+}
+
+.Languages ul,
+.Frameworks ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if they exceed the container width */
+    justify-content: center; 
+} 
+
+.Languages ul li,
+.Frameworks ul li {
+    margin: 10px; /* Add some spacing between the items */
+}
+
+.Languages img {
+    width: 100px; 
+    height: 100px; 
+} 
+
+.Frameworks img {
+    width: 100px; 
+    height: 100px; 
+}
+
+#react {
+    width: 220px;
+} 
+
+.languageAndFramework-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.Languages,
+.Frameworks {
+    flex: 1;
+    flex-basis: calc(100% - 20px); 
+    margin-bottom: 20px; 
 }

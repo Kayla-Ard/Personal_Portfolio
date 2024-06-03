@@ -12,7 +12,7 @@
         
         <header>
             <nav>
-                <ul>
+                <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
@@ -24,22 +24,28 @@
                             <li><a href="project_3.html">Project 3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <!-- i cannot get this to work - Ask Alex -->
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <h1>Welcome to my portfolio!</h1>
+        <h1>Welcome to my portfolio</h1>
         <main>
-            <article>
+            <article class="profile-container">
                 <img src="./static/images/Portfolio Pic 2.jpeg" id="profile-picture" alt="My picture">
                 <div class="text-container">
+                    
                     <h2>Kayla Ard</h2>
-                    <h3>Full Stack Software Engineer</h3>
-                    <p>I am currently based in Utah.</p>
-                    <p>Enjoy exploring my portfolio and don't hesitate to contact me with any questions.</p>
+                    <div class="title">
+                        <h3>Full Stack Software Engineer</h3>
+                    </div>
+                    <div class="bio">
+                        <p>I am currently based in Utah. Enjoy exploring my portfolio and don't hesitate to contact me with any questions.</p>
+                    </div>
                 </div>
             </article>
             <article>
+                <section id="contact">
                 <h3>Contact Me</h3>
                 <form>
                     <div class="form-label">
@@ -74,11 +80,14 @@
                 <div class="contact_links">
                     <a href="https://www.linkedin.com/in/kayla-ard/" target="_blank">LinkedIn</a>
                     <a href="https://github.com/Kayla-Ard" target="_blank">GitHub</a>
-                    <a href="kaylaard@yahoo.com" target="_blank">Email</a>
                     <a href="https://www.instagram.com/kayla__ard?igsh=MTQyOW16bXpjbGRjcQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
                     <a href="https://www.facebook.com/kayla.ard.12?mibextid=LQQJ4d" target="_blank">Facebook</a>
                     <a href="https://x.com/Kayla_Ard" target="_blank">X</a>
                 </div>
+                <div class="email">
+                    <p>Email me at: kaylaard@yahoo.com</p>
+                </div>
+            </section>
             </article>
         </main>
         <footer>
@@ -90,12 +99,8 @@
 
 
 
-<!-- All nav links must work correctly and navigate to their respective pages.
-
-Implement pseudoclasses like :hover, :active, and :focus for enhanced user interaction.
+<!-- 
 
 Implement media queries to ensure responsiveness for both desktop and mobile devices.
-
-Add at least one CSS transition to elements for smooth visual effects.
 
 Provide clear documentation, including a README file outlining project objectives and instructions for running the website locally. -->

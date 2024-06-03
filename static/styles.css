@@ -4,20 +4,17 @@ p {
     margin:0; 
 }
 
-/* imported this font */
 h1 {
     font-family: "Montserrat";
     text-align: center;
     font-size: 45px;
 }
 
-/* imported this font */
 h2 {
     font-family: "Montserrat"; 
     font-size: 35px;
 }
 
-/* imported this font */
 h3 {
     font-family: "Montserrat"; 
     font-size: 22px;
@@ -50,11 +47,13 @@ h5 {
     font-style: italic;
 }
 
+/* imported this font for the webpage */
 /* this is incase i take the animation off, i have the background color set */
 body {
     background-color: #D4B8B1;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat";
 }
 
 /* applying flexbox properties to my container */
@@ -100,7 +99,7 @@ body, .background-container {
     margin-bottom: 50px;
     margin-top: 50px;
 }
-/* i want to get this items to spread across the nav bar but can't figure out how */
+
 /* setting the color scheme, spacing, and border in the header */
 header {
     background-color: #4a1812;
@@ -132,8 +131,7 @@ footer {
     color: #D4B8B1;
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
 }
 
 /* setting spacing, borders, and the alignment of the text */
@@ -171,7 +169,7 @@ nav li {
     display: none;
     position: absolute;
     background-color: #4a1812;
-    width: 110px;
+    width: 130px;
     z-index: 1;
     text-align: left;
     padding: 10px;
@@ -184,9 +182,10 @@ nav li {
     flex-direction: column;
 }
 
+/* Aligning items at the start of the cross axis */
 .profile-container {
     display: flex;
-    align-items: flex-start; /* Align items at the start of the cross axis */
+    align-items: flex-start; 
 }
 
 /* setting the color the button shows on hover */
@@ -195,7 +194,6 @@ button:hover {
 }
 
 /* setting the color and spacing of the button */
-/* I would like to put some space between the button & message box but can't get it to move */
 button {
     border: 2px solid #4a1812;
     background-color:  #4a1812;
@@ -220,7 +218,7 @@ a:hover {
 
 /* adjusting flexbox properties */
 main {
-    flex: 1; /* Grow to fill whatever the remaining space is */
+    flex: 1; /* Grows to fill whatever the remaining space is */
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -241,6 +239,7 @@ form {
 .form-label {
     margin-top: 10px;
     margin-bottom: 5px;
+    font-family: "Montserrat";
 }
 
 .email {
@@ -267,6 +266,7 @@ input, textarea {
     margin-bottom: 15px;
     box-sizing: border-box;
     border: 2px solid #4a1812;
+    font-family: "Montserrat";
 }
 
 /* putting a border around my picture and setting the size */
@@ -290,15 +290,16 @@ div {
     padding-top: 10px;
 }
 
+/*  the gap is adjusting the gap between images */
 .certifications-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between images as needed */
+    gap: 20px; 
 }
 
 .certifications li {
-    flex: 0 0 auto; /* Reset flex-basis */
+    flex: 0 0 auto; 
     max-width: 50%;
     margin-right: 20px;
     margin-left: 20px;
@@ -348,20 +349,22 @@ div {
     font-size: 20px;
 }
 
+/* items wrap to the next line if they exceed the container width */
 .Languages ul,
 .Frameworks ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap; /* items wrap to the next line if they exceed the container width */
+    flex-wrap: wrap; 
     justify-content: space-between; 
     width: 100%;
 } 
 
+/* Adding some spacing between the items */
 .Languages ul li,
 .Frameworks ul li {
-    margin: 10px; /* Add some spacing between the items */
+    margin: 10px; 
 }
 
 .Languages img {

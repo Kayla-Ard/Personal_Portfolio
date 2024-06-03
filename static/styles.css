@@ -105,6 +105,7 @@ body, .background-container {
 header {
     background-color: #4a1812;
     border-bottom: 6px solid #866c69;
+    border-top: 6px solid #866c69;
     margin-bottom: 10px;
     width: 100%;
     padding: 20px;
@@ -125,12 +126,14 @@ ul {
 footer {
     background-color: #4a1812;
     border-top: 6px solid #866c69;
+    border-bottom: 6px solid #866c69;
     text-align: center;
     padding: 10px;
     color: #D4B8B1;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* setting spacing, borders, and the alignment of the text */
@@ -168,7 +171,7 @@ nav li {
     display: none;
     position: absolute;
     background-color: #4a1812;
-    width: 150px;
+    width: 110px;
     z-index: 1;
     text-align: left;
     padding: 10px;
@@ -338,7 +341,8 @@ div {
 
 .goals-container ul li {
     display: block;
-    margin-right: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .experience-container {
     font-size: 20px;

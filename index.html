@@ -12,40 +12,34 @@
         <header>
             <nav>
                 <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li class="dropdown">
-                        <a href="#">Portfolio</a>
-                        <ul class="dropdown-options">
-                            <li><a href="project_1.html">Project 1</a></li>
-                            <li><a href="project_2.html">Project 2</a></li>
-                            <li><a href="project_3.html">Project 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <h1>Welcome to my portfolio</h1>
+        <h1>Full Stack Web Developer</h1>
         <main>
             <article class="profile-container">
-                <img src="./static/images/Portfolio Pic 2.jpeg" id="profile-picture" alt="My picture">
+                <img src="./static/images/portfolio_pic.png" id="profile-picture" alt="My picture">
                 <div class="text-container">
                     
-                    <h2>Kayla Ard</h2>
-                    <div class="title">
-                        <h3>Full Stack Software Engineer</h3>
+                    <div class="Name">
+                        <h2> Kayla Ard</h2>
                     </div>
+                    <!-- <div class="title">
+                        <h3>Full Stack Software Engineer</h3>
+                    </div> -->
                     <div class="bio">
-                        <p>I am currently based in Utah. Enjoy exploring my portfolio and don't hesitate to contact me with any questions.</p>
+                        <p>Welcome to my portfolio! Based in Utah, I'm excited to share my work with you. Feel free to explore, and don’t hesitate to reach out if you have any questions.</p>
                     </div>
                 </div>
             </article>
             <article>
                 <section id="contact">
                 <h3>Contact Me</h3>
-                <form>
+                <form action="https://formspree.io/f/xdknlljz" method="POST">
                     <div class="form-label">
                         <label for="name">Name</label>
                     </div>
@@ -53,7 +47,8 @@
                         <input 
                             id="name" 
                             type="text"
-                            placeholder="Enter you name here">
+                            name="name"
+                            placeholder="Enter your name here" required>
                     </div>
                     <div class="form-label">
                         <label for="email">Email</label>
@@ -61,8 +56,9 @@
                     <div>
                         <input 
                             id="email" 
-                            type="text"
-                            placeholder="Enter you email here">
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email here" required>
                     </div>
                     <div class="form-label">
                         <label for="message-field">Message</label>
@@ -70,11 +66,12 @@
                     <div>
                         <textarea
                             id="message"
-                            type="text" 
-                            placeholder="Enter you message here"></textarea>
+                            name="message"
+                            placeholder="Enter your message here" required></textarea>
                     </div>
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
+                
                 <div class="contact_links">
                     <a href="https://www.linkedin.com/in/kayla-ard/" target="_blank">LinkedIn</a>
                     <a href="https://github.com/Kayla-Ard" target="_blank">GitHub</a>
@@ -83,13 +80,13 @@
                     <a href="https://x.com/Kayla_Ard" target="_blank">X</a>
                 </div>
                 <div class="email">
-                    <p>Email me at: kaylaard@yahoo.com</p>
+                    <p>Email me directly at: kaylaard@yahoo.com</p>
                 </div>
-            </section>
+                </section>
             </article>
         </main>
         <footer>
-            <p>&copy;2024 Designed & Built by Kayla Ard.</p>
+            <p>&copy; Designed & Built by Kayla Ard, 2024.</p>
         </footer>
     </div>
     </body> 

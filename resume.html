@@ -5,6 +5,8 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" href="./static/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>   
     <body>
         <div class="container">
@@ -12,143 +14,154 @@
         
         <header>
             <nav>
-                <ul>
+                <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li class="dropdown">
-                        <a href="#">Portfolio</a>
-                        <ul class="dropdown-options">
-                            <li><a href="project_1.html">Project 1</a></li>
-                            <li><a href="project_2.html">Project 2</a></li>
-                            <li><a href="project_3.html">Project 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./index.html#contact">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <h1>My Resume</h1>
+
+        <h1>Resume</h1>
         <main>
             <article>
-                <h2>My Skills</h2>
+                <h2>Skills</h2>
                 <div class="languageAndFramework-container">
                     <h4>Languages</h4>
                     <div class="Languages">
                         <ul>
-                            <li><img src="https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png" alt="Python" ></li>
-                            <li><img src="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png" alt="JavaScript" ></li>
-                            <li><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5" ></li>
-                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" ></li>
-                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" ></li>
+                            <li><i class="devicon-python-plain"></i> Python</li>
+                            <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                            <li><i class="devicon-html5-plain"></i> HTML5</li>
+                            <li><i class="devicon-css3-plain"></i> CSS3</li>
                         </ul>
                     </div>
                     <div class="Frameworks">
-                        <h4>Frameworks</h4>
+                        <h4>Frameworks/Libraries</h4>
                         <ul>
-                            <li><img src="https://miro.medium.com/v2/resize:fit:438/1*dQvABiWzbE28OTPYjzElKw.png" alt="Flask" ></li>
-                            <li><img src="https://adminlte.io/wp-content/uploads/2022/02/react-ui-frameworks.png" alt="React" id="react"></li>
-                            <li><img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-5-logo-svg-vector.svg" alt="Bootstrap" ></li>
-                            <li><img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/11/django-framework.jpg" alt="Django" ></li>
+                            <li><i class="devicon-flask-original"></i> Flask</li>
+                            <li><i class="devicon-react-original"></i> React</li>
+                            <li><i class="devicon-bootstrap-plain"></i> Bootstrap</li>
+                            <li><i class="devicon-django-plain"></i> Django</li>
+                            <li><i class="devicon-sqlalchemy-plain"></i> SQLAlchemy</li>
+                        </ul>
+                    </div>
+                    <div class="Databases">
+                        <h4>Databases</h4>
+                        <ul>
+                            <li><i class="fas fa-database"></i> SQL</li> <!-- Using a generic database icon for SQL -->
+                            <li><i class="devicon-mysql-plain"></i> MySQL</li>
+                            <li><i class="devicon-postgresql-plain"></i> PostgreSQL</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="Tools_Dev_Ops">
+                        <h4>Tools/Dev Ops</h4>
+                        <ul>
+                            <li><i class="devicon-git-plain"></i> Git</li>
+                            <li><i class="devicon-github-original"></i> GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="Design_Prototyping">
+                        <h4>Design/Prototyping</h4>
+                        <ul>
+                            <li><i class="devicon-figma-plain"></i> Figma</li>
                         </ul>
                     </div>
                 </div>
-            </article>
+            </article>            
 
             <article>
-                <h2>My Certifications</h2>
+                <h2>Certifications</h2>
                 <div class="certifications-container">
                     <div class="certifications">
-                        <h4>Python</h4>
+                        <h4>Full Stack Software Engineer Bootcamp Certificates Earned</h4>
+                        <h3>Coding Temple</h3>
                         <ul>
-                            <li><img src="./static/images/Best Practice Python OOP - Codefinity.png" alt="" padding="-50"></li>
-                            <li><img src="./static/images/Conditional Statements in Python - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Crafting a Classic Hangman Game - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Data Types In Python - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/In-Depth Python OOP - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Intermediate Python Arguments, Scopes and decorators - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Introduction To Python - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Advanced Techniques in pandas - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Pandas First Steps - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Python Data Structures Certificate - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Python Functions Tutorial - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Python Loops Tutorial - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Ultimate NumPy - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Python From Zero to Hero (Learning Track) - Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Python Beyond Intermediate (Learning Track) Codefinity.png" alt="" ></li>
-                            <li><img src="./static/images/Intermediate Python for Data Science - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Introduction to Python - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Introduction to Python Programming for Data Science - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Python Functions and Jupyter Notebook - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Dictionaries, Frequency Tables,-and Functions in Python - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/For Loops and Conditional Statements in Python - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Python Introduction - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Python Basics for Data Analysis - DataQuest.pdf" alt="" ></li>
-                            <li><img src="./static/images/Functions In Python - Great Learning Academy.jpeg" alt="" ></li>
-                            <li><img src="./static/images/OOPs in Python - Great Learning.jpg" alt="" ></li>
-                            <li><img src="./static/images/Python List - Great Learning.jpg" alt="" ></li>
-                            <li><img src="./static/images/Python Class - Great Learning.jpg" alt="" ></li>
-                            <li><img src="./static/images/Python Data Structures - Great Learning.jpg" alt="" ></li>
-                            <li><img src="./static/images/Python Foundations - Great Learning.jpg" alt="" ></li>
-                            <li><img src="./static/images/Python Fundamentals For Beginners - Great Learning.jpg" alt="" ></li>
-                            <li><img src="./static/images/Kayla Ard - 2024-04-17.pdf" alt="" ></li>
+                            <li>Frontend Core</li>
+                            <li>Backend Core</li>
+                            <li>Backend Specialization</li>
                         </ul>
                         <br>
-                        <h4>JavaScript</h4>
+                        <br>
+                        <h4>Python Online Certificates Earned</h4>
+                        <h3>Codefinity</h3>
                         <ul>
-                            <li><img src="./static/images/Introduction to JavaScript - Codefinity.png" alt="" ></li>
+                            <li>Python From Zero to Hero (Learning Track)</li>
+                            <li>Python Beyond Intermediate (Learning Track)</li>
+                            <li>Best Practice Python OOP</li>
+                            <li>Conditional Statements in Python</li>
+                            <li>Crafting a Classic Hangman Game</li>
+                            <li>Data Types In Python</li>
+                            <li>In-Depth Python OOP</li>
+                            <li>Intermediate Python Arguments, Scopes and decorators</li>
+                            <li>Introduction To Python</li>
+                            <li>Advanced Techniques in pandas</li>
+                            <li>Pandas First Steps</li>
+                            <li>Python Data Structures</li>
+                            <li>Python Functions</li>
+                            <li>Python Loops</li>
+                            <li>Ultimate NumPy</li>
+                            <li>Intermediate Python Arguments, Scopes and decorators</li>
                         </ul>
                         <br>
-                        <h4>HTML</h4>
+                        <br>
+                        <h3>DataQuest</h3>
                         <ul>
-                            <li><img src="./static/images/Ultimate HTML - Codefinity.png" alt="" ></li>
+                            <li>Intermediate Python for Data Science</li>
+                            <li>Introduction to Python</li>
+                            <li>Python Functions and Jupyter Notebook</li>
+                            <li>For Loops and Conditional Statements in Python</li>
+                            <li>Python Introduction</li>
+                            <li>Python Basics for Data Analysis</li>
+                            <li>Introduction to Python Programming for Data Science</li>
+                            <li>Dictionaries, Frequency Tables,-and Functions in Python</li>
                         </ul>
                         <br>
-                        <h4>CSS</h4>
+                        <br>
+                        <h3>Great Learning</h3>
                         <ul>
-                            <li><img src="./static/images/CSS Fundamentals.png" alt="" ></li>
+                            <li>Functions In Python</li>
+                            <li>OOPs in Python</li>
+                            <li>Python List</li>
+                            <li>Python Class</li>
+                            <li>Python Data Structures</li>
+                            <li>Python Foundations</li>
+                            <li>Python Fundamentals For Beginners</li>
                         </ul>
                         <br>
-                        <h4>Flask</h4>
+                        <h4>Other Codefinity Online Certificates Earned</h4>
                         <ul>
-                            <li><img src="./static/images/Flask Intensive Course Web Development with Python - Codefinity.png" alt="" ></li>
-                        </ul>
-                        <br>
-                        <h4>React</h4>
-                        <ul>
-                            <li><img src="./static/images/Mastering React2.png" alt="" ></li>
-                        </ul>
-                        <br>
-                        <h4>Bootstrap</h4>
-                        <ul>
-                            <li><img src="./static/images/Bootstrap Build Stylish Websites - Codefinity.png" alt="" ></li>
-                        </ul>
-                        <br>
-                        <h4>Git/GitHub</h4>
-                        <ul>
-                            <li><img src="./static/images/Git Essentials - Codefinity.png" alt=""></li>
-                        </ul>
-                        <br>
-                        <h4>SQL</h4>
-                        <ul>
-                            <li><img src="./static/images/Introductions to SQL - Codefinity.png" alt="" ></li>
+                            <li>Introduction to JavaScript</li>
+                            <li>Ultimate HTML</li>
+                            <li>CSS Fundamentals</li>
+                            <li>Mastering React</li>
+                            <li>Bootstrap Build Stylish Websites</li>
+                            <li>Git Essentials</li>
+                            <li>Introductions to SQL</li>
+                            <li>Flask Intensive Course Web Development with Python</li>
                         </ul>
                     </div>
             </article>
 
             <article>
-                <h2>My Experience</h2>
+                <h2>Experience</h2>
                 <div class="experience-container">
-                    <h4>Software Engineer Tech Residency</h4>
+                    <h4>Tech Residency</h4>
                     <ul>
-                        <li>Co.Lab/ Coding Temple <p></p><i>2024 - September 2024</i></li>
+                        <li><strong>Company:</strong>&nbsp;&nbsp;&nbsp;<em>Co.Lab</em>
+                            <p><strong>Completion Date:</strong>&nbsp;&nbsp;&nbsp;<em>September 2024</em></p>
+                            <p><strong>Position:</strong>&nbsp;&nbsp;&nbsp;<em>Full Stack Web Developer</em></p>
+                            <p><strong>Tech Stack:</strong>&nbsp;&nbsp;&nbsp;<em>Django, &nbsp; PostgreSQL, &nbsp; HTML5, &nbsp; CSS3, &nbsp; JavaScript, &nbsp; React, &nbsp; Bootstrap, &nbsp; Figma, &nbsp; RESTful API</em></p>
+                        </li>
                     </ul>
-                    <br>
+                    </div>
             </article>
 
         </main>
         <footer>
-            <p>&copy;2024 Designed & Built by Kayla Ard.</p>
+            <p>&copy; Designed & Built by Kayla Ard, 2024.</p>
         </footer>
     </div>
     </body> 

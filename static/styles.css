@@ -13,6 +13,7 @@ h1 {
 h2 {
     font-family: "Montserrat"; 
     font-size: 35px;
+    text-decoration: underline;
 }
 
 h3 {
@@ -23,20 +24,11 @@ h3 {
 h4 {
     font-family: "Montserrat"; 
     font-size: 20px;
-    text-align: center;
-    font-weight: bolder;
     font-style: italic;
-    border: 2px solid;
-    background-color: #4a1812;
-    color: #866c69;
-    width:fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     margin: 0;
-    padding: 5px 10px;
     margin-bottom: 30px;
     margin-top: 50px;
+    color: #1a1a4c;
 }
 
 h5 {
@@ -45,10 +37,10 @@ h5 {
     text-align: left;
     font-weight: bolder;
     font-style: italic;
+    color: #1a1a4c;
 }
 
 /* imported this font for the webpage */
-/* this is incase i take the animation off, i have the background color set */
 body {
     background-color: #D4B8B1;
     margin: 0;
@@ -64,35 +56,9 @@ body {
 }
 
 /* setting margins to 0 to override default space */
-body, .background-container {
+body {
     margin: 0;
     padding: 0;
-}
-
-/* trying out some subtle background animation */
-.background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(45deg, #D4B8B1, #CD8C8C, #866c69, #4a1812);
-    background-size: 400% 400%;
-    animation: gradientAnimation 7s ease infinite;
-}
-
-/* trying out some subtle background animation */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .title {
@@ -118,7 +84,6 @@ ul {
     margin: 0;
     list-style-type: none;
     display: flex;
-    
 }
 
 /* setting the color scheme, spacing, and border in the footer */
@@ -137,7 +102,7 @@ footer {
 /* setting spacing, borders, and the alignment of the text */
 article {
     margin: 20px auto;
-    border: 2 px solid #4a1812;
+    border: 2px solid #4a1812;
     padding: 50px;
     width: 70%;
     border-radius: 10px;
@@ -157,46 +122,47 @@ nav ul {
     margin: 0;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav li {
     margin: 0 10px;
 }
 
-/* styling how the dropdown options on profile looks */
-.dropdown-options {
-    display: none;
-    position: absolute;
-    background-color: #4a1812;
-    width: 130px;
-    z-index: 1;
-    text-align: left;
-    padding: 10px;
-    height: 110px;
-}
-
-/* setting the shape of the drop down options from profile */
-.dropdown:hover .dropdown-options {
-    display: flex;
-    flex-direction: column;
+.navbar a:hover {
+    color:white;
 }
 
 /* Aligning items at the start of the cross axis */
 .profile-container {
     display: flex;
     align-items: flex-start; 
+    padding-bottom: 0;
+}
+
+.bio {
+    margin-top: 100px;
+}
+
+.Name {
+    margin-top: 100px;
+}
+
+.Name h2 {
+    text-decoration: none;
+    color: #1a1a4c;
 }
 
 /* setting the color the button shows on hover */
 button:hover {
-    background-color: #966c69;
+    color: white;
+    font-weight: bold;
 }
 
 /* setting the color and spacing of the button */
 button {
     border: 2px solid #4a1812;
-    background-color:  #4a1812;
+    background-color: #4a1812 !important;
     color: #D4B8B1;
     padding: 10px;
     width: 100%;
@@ -209,11 +175,6 @@ a {
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-}
-
-/* setting the hover color on and clickable links on the page */
-a:hover {
-    background-color: #966c69;
 }
 
 /* adjusting flexbox properties */
@@ -245,6 +206,7 @@ form {
 .email {
     text-align: center;
     padding-top: 20px;
+    color: #1a1a4c;
 }
 
 /* making the labels stand out a little more with the bold effect */
@@ -255,7 +217,7 @@ label {
 
 /* targeting the text in my form to be a certain color */
 ::placeholder {
-    color:  #D4B8B1;
+    color:  #cdd4b1;
 }
 
 /* spacing in text area */
@@ -272,10 +234,10 @@ input, textarea {
 /* putting a border around my picture and setting the size */
 #profile-picture {
     border-radius: 50px;
-    border: 3px solid #4a1812;
     width: 400px;
     height: auto;
     margin-right: 20px;
+    margin-bottom: 0;
 }
 
 /* making the text the same color as nav bar so page flows better */
@@ -290,35 +252,45 @@ div {
     padding-top: 10px;
 }
 
+.contact_links a {
+    color: #4a1812;
+}
+
+.contact_links a:hover {
+    font-size: 20px;
+    color: #1a1a4c;
+}
+
 /*  the gap is adjusting the gap between images */
 .certifications-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px; 
+    justify-content: space-around;
 }
 
 .certifications li {
-    flex: 0 0 auto; 
     max-width: 50%;
     margin-right: 20px;
     margin-left: 20px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.certifications img {
-    width: 100%; 
-    height: 100%; 
-    border: 10px solid #4a1812;
+    justify-content: space-around;
+    font-size: 18px;
+    /* flex-basis: 45%; */
 }
 
 .certifications ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px; 
+}
+
+/* Ensures the last row is aligned to the left */
+.certifications ul:last-child {
+    justify-content: flex-start;
 }
 
 .text-container {
@@ -335,18 +307,16 @@ div {
     text-align: left;
 }
 
-.goals-container {
+.experience-container {
     font-size: 18px;
-    text-align: left;
 }
 
-.goals-container ul li {
-    display: block;
-    margin-right: 30px;
-    margin-left: 30px;
+.ed-container h5 {
+    margin-bottom: 5px;
 }
-.experience-container {
-    font-size: 20px;
+
+ul li p {
+    margin-top: 8px; 
 }
 
 /* items wrap to the next line if they exceed the container width */
@@ -361,31 +331,42 @@ div {
     width: 100%;
 } 
 
+.Databases ul,
+.Tools_Dev_Ops ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.Design_Prototyping ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%;
+}
+
 /* Adding some spacing between the items */
 .Languages ul li,
 .Frameworks ul li {
     margin: 10px; 
 }
 
-.Languages img {
-    width: 100px; 
-    height: 100px; 
-} 
-
-.Frameworks img {
-    width: 100px; 
-    height: 100px; 
-}
-
-#react {
-    width: 220px;
-} 
-
 .languageAndFramework-container {
     display: flex;
     flex-direction: column; 
     justify-content: space-around; 
     width: 100%;
+}
+
+.languageAndFramework-container li {
+    font-size: 25px;
 }
 
 .Languages,

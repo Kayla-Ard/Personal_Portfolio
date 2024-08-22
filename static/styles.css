@@ -416,7 +416,7 @@ ul li p {
     height: 0;
     overflow: hidden;
     max-width: 100%; /* Ensures the container doesn't exceed the parent's width */
-    background: #000; /* Optional: Background color while loading */
+    background: #1a1a4c; /* Optional: Background color while loading */
     margin-bottom: 20px; /* Optional: Space below the video */
 }
 
@@ -429,6 +429,21 @@ ul li p {
     border: 0;
 }
 
+.download-button {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color:#4a1812;;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.download-button:hover {
+    background-color: #1a1a4c;;
+}
 
 /* Media query for very small screens to display 1 image per row */
 @media (max-width: 480px) {
